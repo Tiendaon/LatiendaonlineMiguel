@@ -1,0 +1,125 @@
+/*
+Theme Name: Master Class Chile.
+Theme URI: #
+Author: Eduardo Jorquera
+Author URI: http:eduardojorquera.cl.
+Description: Tema para la productora Master Class Chile diseñado a medida.
+Version: 1.0
+Tags: tag1, tag2, otro
+Text Domain: Texto Dominio
+*/
+
+/*==================================================
+GLOBALES
+==================================================*/
+.backFecha {color: #999;} 
+.alertform {color: #D06157; font-size: 13px; position: relative}
+.form-control {margin-bottom: 0px}
+
+/* Botones */
+.btn.btn-primary {background: #8AC249}
+.btn.btn-primary:hover {background: #cf6256}
+
+/* Header */
+#header {
+    background: #79bfcf;
+}
+
+/* Fondo Titulo */
+.bgTitle {
+    background: url(img/backTiendaHome.jpg) no-repeat;
+    background-size: 100%;
+}
+
+/* Breadcrumbs*/
+.breadcrumb li a {color: #66A4B0;}
+
+/* Dashboard*/
+.panelTienda1 {margin-bottom: 10px}
+.statsBar .i.panelTienda1 .c{background:#79bfcf}
+.statsBar .i.panelTienda1 .c:before{background:#66A4B0}
+.statsBar .i.panelTienda1 .c:after{content:'\f26b'}
+.statsBar .i.panelTienda1 .c:hover{background:#66A4B0}
+.statsBar .i.panelTienda1 .c:hover:before{background:#79bfcf}
+
+
+/* Back Perfil */
+#back-perfil small {margin-top: 20px}
+
+/*Back Tienda */
+.tiendas {bottom: 0px; margin-top: 10px; padding: 5px 5px 20px 5px; position: relative; width: 250px; -webkit-transition:all 0.2s ease; -moz-transition:all 0.2s ease; -o-transition:all 0.2s ease; transition:all 0.2s ease;}
+.tiendas:hover {bottom: 15px}
+.tiendasPerfil {margin-bottom: -70px; position: relative; z-index: 99}
+.tiendasTecho {background-image: url(img/destacada-techo.png); height: 50px; margin-bottom: -20px; position: relative; width: 250px; }
+.tiendasValidada {margin-top: -15px; position: relative; text-align: center}
+.tiendasTitulo {background-color: #333; margin-top: -25px; height:90px; padding: 25px 5px 5px 5px; width: 250px; text-align: center}
+.tiendasTitulo h5 {color: #f7f7f7; font-size: 15px; font-weight: 200}
+.tiendasTitulo small {color: #f7f7f7; font-size: 11px; font-weight: 100}
+.tiendasCategoria {background-color: #666; color:#999; font-size: 11px; padding: 5px; width: 250px; text-align: center}
+
+
+/* Productos */
+.productos {bottom: 0px; margin-top: 10px; padding: 5px 5px 20px 5px; position: relative; width: 250px; -webkit-transition:all 0.2s ease; -moz-transition:all 0.2s ease; -o-transition:all 0.2s ease; transition:all 0.2s ease;}
+.productos:hover {bottom: 15px}
+.productosTecho {background-color:#333; color:#f7f7f7; font-size: 20px; font-weight: 300; height: 50px; margin-bottom: -20px; position: relative; width: 250px; padding: 10px; text-align: center}
+.productosTitulo {background-color: #333; height:80px ; margin-top: -25px; padding: 25px 5px 5px 5px; width: 250px; text-align: center}
+.productosTitulo h5 {color: #f7f7f7; font-size: 15px; font-weight: 200}
+.productosTitulo small {color: #f7f7f7; font-size: 11px; font-weight: 100}
+.productosCategoria {background-color: #666; color:#999; font-size: 11px; padding: 5px; width: 250px; text-align: center}
+
+
+/* Login */
+.page-login {background: url(img/back-login.jpg); background-size: cover}
+.loginContentWrap img {margin-bottom: 10px; margin-top: 10px}
+.loginContentWrap h1 {font-weight: 100 !important; text-align: center}
+.loginContentWrap li a {font-size: 14px}
+.btn.btn-orange {background: #1F8B97; color: #fff;}
+
+/* Planes */
+.pricing-element {background: #fff;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.15);box-shadow: 0 1px 1px rgba(0,0,0,.15);margin-bottom: 30px;position: relative;}
+.pricing-header {color: #fff;padding: 40px 10px 65px;margin-bottom: 20px;position: relative;}
+.pricing-header h1 {font-size: 50px}
+.pricing-inheader {background-color: rgba(0,0,0,.15);bottom: 0;margin: 0 -10px; font-size:18px; padding: 8px 10px 9px;position: absolute;width: 100%;}
+.pricing-component:not(:last-child) {border-bottom: 1px solid #EAEAEA;}
+.bg-rojo {background-color: #D06157!important;}
+.bg-celeste {background-color: #79bfcf!important;}
+.bg-verde {background-color: #8ac349!important;}
+.to-center {text-align: center!important;}
+
+.corner-ribbon {width: 85px;height: 88px;overflow: hidden;position: absolute;top: -2px;right: -2px;z-index: 999;}
+.corner-ribbon-text {text-align: center;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);position: relative;padding: 7px 0;left: -5px;top: 15px;width: 120px;background-color: #fec824;color: #FFF;-webkit-box-shadow: 0 0 3px rgba(0,0,0,.3);box-shadow: 0 0 3px rgba(0,0,0,.3);}
+.bg-rojo {background-color: #D06157!important;}
+.bg-celeste {background-color: #79bfcf!important;}
+.bg-verde {background-color: #8ac349!important;}
+
+.plan-compra {padding: 15px}
+
+/*==================================================
+MÓVIL RESPONSIVE
+==================================================*/
+
+/* Escritorio grande */
+@media (min-width: 1200px) {
+
+
+}
+
+/* Escritorio medianos */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Escritorio pequeños*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Moviles */
+@media (max-width: 480px) {
+
+}

@@ -1,0 +1,593 @@
+body {
+    background-image: url(img/bg-fondo.png);
+    font-family: "Roboto"
+}
+.color1 {
+    background-color: #e4d6ce
+}
+.color2 {
+    background-color: #dcbfa6
+}
+.color3 {
+    background-color: #818b65
+}
+.color4 {
+    background-color: #ffcc6b
+}
+.color5 {
+    background-color: #bdd1d9
+}
+.color6 {
+    background-color: #41210a
+}
+.blanco {
+    background-color: rgba(255, 255, 255, 0.5)
+}
+.encabezado1 {
+    color: #79bfcf
+}
+a {text-decoration: none;color: #cf6256}
+a:hover {text-decoration: none;color: #79bfcf}
+a:visited {text-decoration: none;color: #79bfcf}
+a:active {text-decoration: none;color: #79bfcf}
+a:focus {text-decoration: none;color: #79bfcf}
+
+li {list-style-type: none}
+
+.mb {
+    margin-bottom: 10px
+}
+.mt {
+    margin-top: 10px
+}
+.btn-primary {
+    background-color: #79bfcf;
+    border-color: #56A3B5
+}
+.btn-primary:hover {
+    background-color: #56A3B5
+}
+
+.sliderTiendaRow {margin-top: 20px}
+
+.btn1 {
+    background-color: #afbe48;
+    border-bottom: solid #008FC5 5px;
+    padding: 10px;
+    text-decoration: none
+}
+.btn2 {
+    background-color: #00739E;
+    border-bottom: solid #008FC5 5px;
+    padding: 10px;
+    text-decoration: none
+}
+.btn2 h3 {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center
+}
+.separador1 {
+    background-color: #cf6256;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 15px
+}
+.separador1 h4 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px
+}
+.container-fluid {
+    max-width: 1280px
+}
+.smallGray small {
+    color: #ADADAD;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: right
+}
+.formContenedor {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 5px solid #79bfcf;
+    padding: 10px
+}
+.formContenedor label {
+    color: #999;
+    font-weight: 400
+}
+::-webkit-input-placeholder {
+    color: #e4e4e4 !important
+}
+:-moz-placeholder {
+    color: #e4e4e4 !important
+}
+::-moz-placeholder {
+    color: #e4e4e4 !important
+}
+:-ms-input-placeholder {
+    color: #e4e4e4 !important
+}
+#contenedor-superior {
+    position: relative
+}
+#menu-top {
+    border-bottom: 1px solid #f7f7f7;
+    position: relative;
+    z-index: 99;
+    background-color: #79bfcf;
+    text-align: right
+}
+#menu-top section {
+    padding: 10px
+}
+#menu-top section span {
+    margin-left: 20px
+}
+#menu-top a {
+    color: #fff
+}
+#menu-top a:hover {
+    color: #cf6256
+}
+#sociales { margin-bottom: -120px; margin-top: 25px; max-width: 1280px;padding: 0 50px; position: relative; z-index: 98}
+
+#logo {margin-top: 0; position: relative; z-index: 97}
+#logo:hover {position: relative}
+#logo img {position: relative; bottom: 0; -webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out;transition: all 0.1s ease-out}
+#logo img:hover {position: relative; bottom: 10px}
+
+#techo {
+    background: url(img/techo-tienda.png) repeat-x;
+    background-position: center;
+    height: 150px;
+    margin-top: -110px;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 96
+}
+#sliderTienda {margin-top: -30px}
+#sliderTiendaRow {}
+.sliding article
+
+.slider-thumb div {
+    height: 60px
+}
+#slider-thumb-container {
+    margin-right: 15px;
+    margin-left: 15px
+}
+#carousel-example-generic {
+    border-bottom: 10px solid #79bfcf
+}
+#slider section {
+    padding: 0 0px
+}
+#gratis article {
+    background-color: #79bfcf;
+    padding: 20px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out
+}
+#gratis article:hover {
+    background-color: #cf6256
+}
+#gratis span {
+    color: #fff;
+    font-style: 'Roboto';
+    font-size: 30px;
+    font-weight: 300;
+    margin-right: 20px
+}
+.destacadas {
+    background-color: #e4e4e4;
+    margin-top: 10px;
+    max-width: 1280px;
+    padding: 10px 10px 20px 10px
+}
+.destacadas article {
+    position: relative
+}
+.destacadas h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 5px
+}
+.destacadas h6 {
+    color: #e4e4e4;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin: 5px
+}
+.destacadas-ico {
+    margin-bottom: -35px;
+    position: relative;
+    text-align: center;
+    z-index: 99
+}
+.destacadas-ico span {
+    color: #cf6256
+}
+.destacadas-techo {
+    position: relative;
+    z-index: 98
+}
+.destacadas-img-cont {
+    height: 200px;
+    position: relative;
+    margin-top: -20px;
+    z-index: 97;
+    margin: -15px 10px 0 10px
+}
+.destacadas-cont {
+    background-color: #333;
+    border-top: 5px solid #999;
+    height: 50px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center
+}
+#buscador {
+    background-color: #333;
+    border-bottom: 7px solid #cf6256;
+    max-width: 1280px;
+    margin-top: 10px;
+    padding: 10px 0
+}
+#buscador-btn {
+    color: #cf6256;
+    margin-bottom: 10px
+}
+#buscador-btn:hover {
+    color: #D0DA6B
+}
+#columna-left {background-color: #f7f7f7}
+#columna-left section {padding: 10px 0}
+#columna-left label {color: #666; font-weight: 300}
+
+#menu-categoria li {
+    border-top: 1px dotted #e4e4e4;
+    height: 35px;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out
+}
+#menu-categoria li:hover {
+    margin-left: 20px
+}
+#menu-categoria li i {
+    color: #cf6256
+}
+#columna-right section {
+    padding: 10px 0
+}
+
+.tiendas {bottom: 0px; margin-top: 10px; padding: 5px 5px 20px 5px; position: relative; width: 250px; -webkit-transition:all 0.2s ease; -moz-transition:all 0.2s ease; -o-transition:all 0.2s ease; transition:all 0.2s ease;}
+.tiendas:hover {bottom: 15px}
+.tiendasPerfil {margin-bottom: -70px; position: relative; z-index: 99}
+.tiendasTecho {background-image: url(img/destacada-techo.png); height: 50px; margin-bottom: -20px; position: relative; width: 250px; }
+.tiendasValidada {margin-top: -15px; position: relative;}
+.tiendasTitulo {background-color: #333; margin-top: -25px; height:90px; padding: 25px 5px 5px 5px; width: 250px; text-align: center}
+.tiendasTitulo h5 {color: #f7f7f7; font-size: 15px; font-weight: 200}
+.tiendasTitulo small {color: #f7f7f7; font-size: 11px; font-weight: 100}
+.tiendasCategoria {background-color: #666; color:#999; font-size: 11px; padding: 5px; width: 250px; text-align: center}
+
+#perfil-content {
+    background-color: #333;
+    height: 400px;
+    position: relative
+}
+#perfil-img {
+    border: 5px solid #fff;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    height: 250px;
+    margin-top: 50px;
+    position: relative;
+    width: 250px;
+    z-index: 99
+}
+#perfil-bgcolor {
+    background-color: #e4e4e4;
+    height: 170px;
+    margin-top: -300px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+    z-index: 95
+}
+#perfil-contenedor {
+    margin-top: 150px;
+    position: relative;
+    z-index: 90
+}
+#perfil-contenedor h4 {
+    color: #f7f7f7;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase
+}
+#perfil-contenedor h5 {
+    color: #ccc;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase
+}
+#perfil-contenedor h6 {
+    color: #ccc;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase
+}
+#perfil-imagen {
+    height: 450px;
+    margin-left: -30px;
+    position: relative;
+    z-index: 90
+}
+#perfil-imagen-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: 0px;
+    margin-left: 0px;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 91
+}
+#control {background-color: #333;color: #999;border-top: solid #cf6256 10px}
+#control a {color:#999; text-decoration: none;}
+#control a:hover {color: #f7f7f7;}
+#control article {padding: 5px 5px 10px 5px; text-align: center}
+.control-ico {font-size: 30px;vertical-align: middle}
+.control-toggleTex {vertical-align: middle}
+
+
+.productos {bottom: 0px; margin-top: 10px; padding: 5px 5px 20px 5px; position: relative; width: 250px; -webkit-transition:all 0.2s ease; -moz-transition:all 0.2s ease; -o-transition:all 0.2s ease; transition:all 0.2s ease;}
+.productos:hover {bottom: 15px}
+.productosTecho {background-color:#333; color:#f7f7f7; font-size: 20px; font-weight: 300; height: 50px; margin-bottom: -20px; position: relative; width: 250px; padding: 10px; text-align: center}
+.productosTitulo {background-color: #333; height:80px ; margin-top: -25px; padding: 25px 5px 5px 5px; width: 250px; text-align: center}
+.productosTitulo h5 {color: #f7f7f7; font-size: 15px; font-weight: 200}
+.productosTitulo small {color: #f7f7f7; font-size: 11px; font-weight: 100}
+.productosCategoria {background-color: #666; color:#999; font-size: 11px; padding: 5px; width: 250px; text-align: center}
+
+
+.producto {
+    margin-top: 10px;
+    padding: 5px 5px 20px 5px
+}
+.producto article {
+    position: relative;
+    bottom: 0px;
+    max-width: 250px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out
+}
+.producto article:hover {
+    bottom: 15px
+}
+.producto h4 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+    margin: 5px
+}
+.producto h6 {
+    color: #e4e4e4;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin: 5px
+}
+.producto-ico {
+    color: #333;
+    margin-bottom: -30px;
+    position: relative;
+    text-align: center;
+    z-index: 99
+}
+.producto-techo {
+    background-color: #333;
+    padding: 5px 10px;
+    position: relative;
+    text-align: center;
+    z-index: 98;
+    -o- -ms-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px
+}
+.producto-techo h3 {
+    color: #fff;
+    font-weight: 300
+}
+.producto-img {
+    height: 200px;
+    position: relative;
+    margin-top: -20px;
+    z-index: 97;
+    margin: -15px 0px 0 0px
+}
+.producto-cont {
+    background-color: #333;
+    border-top: 5px solid #999;
+    height: 50px;
+    position: relative;
+    text-align: center
+}
+#producto-slider-container {
+    height: 70px
+}
+.producto-slider a div {
+    height: 60px
+}
+.producto-img-cont {
+    height: 400px
+}
+#info {
+    margin-top: 60px
+}
+#info-titulo {
+    background-color: #f7f7f7;
+    padding: 10px
+}
+#info-bajada {
+    background-color: #333;
+    color: #999;
+    padding: 10px
+}
+#info-texto {
+    padding: 10px
+}
+#content h1,
+h3 {
+    color: #cf6256
+}
+#content p {
+    color: #333
+}
+#welcome-video {
+    position: relative
+}
+#welcome-video img {
+    border: 5px solid #e4e4e4
+}
+#welcome-video article {
+    background-color: #f7f7f7;
+    margin-top: -30px;
+    padding: 30px 10px 20px 10px
+}
+.welcome-bloque {
+    margin-bottom: 45px
+}
+.welcome-bloque li {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 5px
+}
+.welcome-bloque-red {
+    background-color: #cf6256
+}
+.welcome-bloque-red h4 {
+    color: #fff;
+    margin-bottom: 25px
+}
+footer {
+    background-color: #333;
+    padding: 20px 0
+}
+footer h4 {color: #e4e4e4;font-size: 15px;font-weight: 400}
+footer p {color: #999;font-size: 12px}
+footer small {color: #666;font-size: 11px}
+
+.footerTienda {background-color: #1F1F1F; padding-top: 10px; text-align: center}
+.footerTienda span {color: #333;font-size: 20px}
+.footerTienda span:hover {color: #79bfcf}
+.footerTienda small {color: #666}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {z-index: 2; color: #fff; cursor: default; background-color: #79bfcf; border-color: #79bfcf}
+.pagination>li>a,
+.pagination>li>span {color: #79bfcf}
+
+.errorSummary {
+    background-color: #cf6256;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px
+}
+
+#aviso-movil {display: none}
+
+/*==================================================
+MÓVIL RESPONSIVE
+==================================================*/
+
+/* Escritorio grande */
+@media (min-width: 1200px) {
+
+
+}
+
+/* Escritorio medianos */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Escritorio pequeños*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Tablets */
+@media (max-width: 767px) {
+    #perfil-imagen { background-size: cover; height: 150px; margin-left: 0}
+}
+
+/* Moviles */
+@media (max-width: 480px) {
+
+    /* Globales */
+    .btn2 h3 {font-size: 18px}
+
+    #perfil-imagen-box {padding: 20px 20px 10px 20px}
+
+    /* Logo */
+    #logo {margin-top: 100px; position: relative; z-index: 97}
+    #logo:hover {position: relative}
+    #logo img {max-width: 150px; position: relative; bottom: 0; -webkit-transition: all 0.1s ease-out; -moz-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out;transition: all 0.1s ease-out}
+    #logo img:hover {position: relative; bottom: 0px}
+
+    /* Slider */
+    #slider { margin-left: -20px; margin-right: -20px;}
+    #slider section {padding: 0px 10px}
+
+    .slider-thumb div {height: 40px}
+    #slider-thumb-container {margin-right: 15px; margin-left: 15px}
+
+    /* Gratis */
+    #gratis article { background-color: #79bfcf; padding: 15px 10px; text-align: center; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out}
+    #gratis article:hover {background-color: #cf6256}
+    #gratis span {color: #fff; font-style: 'Roboto'; font-size: 18px; font-weight: 300; margin-right: 20px}
+        
+    /* Sociales */
+    #sociales { margin-bottom: -120px; margin-top: 25px; max-width: 1280px; padding: 0 0px; position: relative; text-align: center; z-index: 98; }
+    #sociales span.fa-lg { font-size: 30px; margin-bottom: 10px}
+
+    #techo {background: url(img/techo-tienda-movil.png) repeat-x; background-position: center; height: 90px; margin-top: -80px; margin-right: 5px; margin-left: 5px; position: relative; z-index: 96;}
+
+    /* Control */
+    #control {background-color: #333; color: #999; border-top: solid #cf6256 10px}
+    #control article {padding: 5px 5px 10px 5px}
+    #control article div {display: inline-block; margin-left: 10px}
+    .control-ico {font-size: 30px;vertical-align: middle}
+    .control-toggleTex {vertical-align: middle}
+
+    /* Info Producto */
+    #info {margin-top: 10px}
+
+    #menu-categoria-hide {display: none}
+
+    #aviso-movil {display: initial}
+}
