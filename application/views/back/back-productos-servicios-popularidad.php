@@ -89,7 +89,7 @@
 								      <i class="fa fa-plus fa-1x"></i>
 								    </div>
 								    <div class="productosPortada">
-								      <img class="" src="img/back-producto-cuadrado.jpg" alt="">
+								      <img class="" src="<?php echo base_url()?>views/back/img/back-producto-cuadrado.jpg" alt="">
 								    </div>
 								    <div class="productosTitulo" style="background-color:#8ac349">
 								      <?php /*
@@ -118,7 +118,7 @@
 								      <i class="fa fa-ban fa-1x"></i>
 								    </div>
 								    <div class="productosPortada">
-								      <img class="" src="img/back-producto-cuadrado.jpg" alt="">
+								      <img class="" src="<?php echo base_url()?>views/back/img/back-producto-cuadrado.jpg" alt="">
 								    </div>
 								    <div class="productosTitulo" style="background-color:#D06157">
 								      <?php /*

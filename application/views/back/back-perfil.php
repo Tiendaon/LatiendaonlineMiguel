@@ -50,7 +50,7 @@
 						<div class="col-xs-12 col-md-4 col-lg-3">
 							<div class="userProfileInfo">
 								<div class="image">
-									<img src="tmp/eduardojorque.jpg" alt="#" class="img-responsive">
+									<img src="<?php echo base_url()?>views/back/tmp/eduardojorque.jpg" alt="#" class="img-responsive">
 									<a href="#" title="#" class="editImage">
 										<i class="fa fa-camera"></i>
 									</a>

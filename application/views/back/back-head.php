@@ -9,14 +9,14 @@
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
-	<link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-	<link rel="stylesheet" href="assets/css/select2.min.css">
-	<link rel="stylesheet" href="assets/font-awesome-4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/fontello.css">
-	<link rel="stylesheet" href="assets/css/chartist.min.css">
-	<link rel="stylesheet" href="assets/css/app.min.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>views/back/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>views/back/assets/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>views/back/assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>views/back/assets/css/select2.min.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>views/back/assets/font-awesome-4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>views/back/assets/css/fontello.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>views/back/assets/css/chartist.min.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>views/back/assets/css/app.min.css">
 	
 	<!-- Modernizr -->
 	<script src="assets/js/modernizr-2.8.3.min.js"></script>
