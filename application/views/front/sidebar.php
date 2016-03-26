@@ -54,12 +54,12 @@
       <select class="form-control" name="ciudad">
          <option>SELECCIONE UNA CIUDAD</option>
             <?php 
-    for ($i = 1; $i <= count($categoria); $i++)
+    for ($i = 1; $i <= count($ciudades); $i++)
           {
-          if( array_key_exists($i, $categoria)){
+          if( array_key_exists($i, $ciudades)){
      ?>
               
-              <option value="<?php echo $i ?>"><?php echo $categoria[$i] ?></option>
+              <option value="<?php echo $i ?>"><?php echo $ciudades[$i] ?></option>
     <?php
                 }
            }

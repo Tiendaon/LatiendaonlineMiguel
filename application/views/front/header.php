@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-xs-12">
       <section>
-          <span><a  href="<?php echo base_url()?>views/back/back-user-registro.php " > Registrarse</a></span>
+          <span><a  href="<?php echo base_url()?>views/back/back-user-registro.php" > Registrarse</a></span>
           
         <span><a href="#">Botón 2</a></span>
       </section>

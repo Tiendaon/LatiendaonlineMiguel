@@ -17,7 +17,13 @@ class Welcome extends CI_Controller {
           $this->load->view('front/index',$data);  
                      
 	}
-        
+	public function back_user_registro()
+	{
+          
+          $this->load->view('back/back-user-registro');  
+                     
+	}
+                
        
 }
 
