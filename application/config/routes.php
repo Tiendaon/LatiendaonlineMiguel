@@ -39,6 +39,8 @@
 */
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
+//$route['back_user_registro'] = '/welcome/back_user_registro';
+
 
 
 /* End of file routes.php */
