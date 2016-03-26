@@ -95,6 +95,6 @@
     <h4>PUBLICIDAD</h4>
   </div>
 
-  <img class="img-responsive" src="<?php echo base_url()?>views/front/js/holder.js/300x300/auto" alt="">
+  <img class="img-responsive" src="js/holder.js/300x300/auto" alt="">
 
 </section>

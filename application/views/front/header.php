@@ -17,7 +17,7 @@
   <div class="row">
     <div class="col-xs-12">
       <section>
-        <img src="<?php echo base_url()?>views/front/img/logo-home.png" alt="" class="img-responsive img-circle center-block">
+        <img src="<?php echo base_url()?>application/views/front/img/logo-home.png" alt="" class="img-responsive img-circle center-block">
       </section>
     </div><!--/.col-->
   </div><!--/.row-->

@@ -11,7 +11,7 @@
           <img class="" src="holder.js/250x250" alt="">
         </div>
         <div class="tiendasValidada">
-          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>views/front/img/validar.png" alt="">
+          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>application/views/front/img/validar.png" alt="">
         </div>
         <div class="tiendasTitulo">
           <h5>Eduardo Fotografía Pro</h5>
@@ -34,7 +34,7 @@
           <img class="" src="holder.js/250x250" alt="">
         </div>
         <div class="tiendasValidada">
-          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>views/front/img/validar-off.png" alt="">
+          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>application/views/front/img/validar-off.png" alt="">
         </div>
         <div class="tiendasTitulo">
           <h5>Eduardo Fotografía Pro</h5>
@@ -57,7 +57,7 @@
           <img class="" src="holder.js/250x250" alt="">
         </div>
         <div class="tiendasValidada">
-          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>views/front/img/validar-off.png" alt="">
+          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>application/views/front/img/validar-off.png" alt="">
         </div>
         <div class="tiendasTitulo">
           <h5>Eduardo Fotografía Pro</h5>
@@ -80,7 +80,7 @@
           <img class="" src="holder.js/250x250" alt="">
         </div>
         <div class="tiendasValidada">
-          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>views/front/img/validar-off.png" alt="">
+          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>application/views/front/img/validar-off.png" alt="">
         </div>
         <div class="tiendasTitulo">
           <h5>Eduardo Fotografía Pro</h5>
@@ -103,7 +103,7 @@
           <img class="" src="holder.js/250x250" alt="">
         </div>
         <div class="tiendasValidada">
-          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>views/front/img/validar.png" alt="">
+          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>application/views/front/img/validar.png" alt="">
         </div>
         <div class="tiendasTitulo">
           <h5>Eduardo Fotografía Pro</h5>
@@ -126,7 +126,7 @@
           <img class="" src="holder.js/250x250" alt="">
         </div>
         <div class="tiendasValidada">
-          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>views/front/img/validar-off.png" alt="">
+          <img class="img-responsive img-circle center-block" src="<?php echo base_url()?>application/views/front/img/validar-off.png" alt="">
         </div>
         <div class="tiendasTitulo">
           <h5>Eduardo Fotografía Pro</h5>

@@ -6,17 +6,17 @@
   <title>La tienda online</title>
 
   <!-- Fontawesome -->
-  <link href="<?php echo base_url()?>views/front/css/font-awesome.min.css" rel="stylesheet">
+  <link href="<?php echo base_url()?>application/views/front/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Bootstrap -->
-  <link href="<?php echo base_url()?>views/front/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php echo base_url()?>application/views/front/css/bootstrap.min.css" rel="stylesheet">
   
   <!-- Owl Carousel -->
-  <link rel="stylesheet" href="<?php echo base_url()?>views/front/css/owl.carousel.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>application/views/front/css/owl.carousel.css">
 
   <!-- Font Google -->
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100,100italic' rel='stylesheet' type='text/css'>
 
   <!-- Style -->
-  <link href="<?php echo base_url()?>views/front/style.css" rel="stylesheet">
+  <link href="<?php echo base_url()?>application/views/front/style.css" rel="stylesheet">
 </head>

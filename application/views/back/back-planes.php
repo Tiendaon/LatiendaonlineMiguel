@@ -1,4 +1,4 @@
-<!doctype html>
+    <!doctype html>
 <html class="no-js" lang="">
 
 <!-- HEAD -->
@@ -19,6 +19,8 @@
 	CONTENIDO
 	//////////////////////////////////////-->
 
+        
+        
 	<!-- Page Wrap -->
 	<div class="pageWrap">
 
