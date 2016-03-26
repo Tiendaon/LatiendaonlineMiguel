@@ -4,7 +4,7 @@
     <div class="col-xs-12">
       <section>
           
-          <span><a  href="<?php echo base_url()?>index.php/welcome/back_user_registro"> Registrarse</a></span>
+          <span><a  href="<?php echo base_url()?>index.php/Welcome/back_user_registro"> Registrarse</a></span>
           
         <span><a href="#">Botón 2</a></span>
       </section>
