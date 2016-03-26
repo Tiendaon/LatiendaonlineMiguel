@@ -8,10 +8,10 @@ class Welcome extends CI_Controller {
     
 	public function index()
 	{
-          $data['categoria']=$this->claseconsultas->obtener_categorias();
-          $data['regiones']=$this->claseconsultas->obtener_regiones();
-          $data['ciudades']=$this->claseconsultas->obtener_ciudades();
-          $data['top_categorias']=$this->claseconsultas->obtener_top_categorias();
+          $data['categoria']=$this->Claseconsultas->obtener_categorias();
+          $data['regiones']=$this->Claseconsultas->obtener_regiones();
+          $data['ciudades']=$this->Claseconsultas->obtener_ciudades();
+          $data['top_categorias']=$this->Claseconsultas->obtener_top_categorias();
           $this->load->view('front/index',$data);  
                      
 	}
@@ -21,6 +21,11 @@ class Welcome extends CI_Controller {
           $this->load->view('back/back-user-registro');  
                      
 	}
-                
+        public function back_index()
+	{
+          
+          $this->load->view('back/index');  
+                     
+	}        
        
 }
