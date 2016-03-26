@@ -44,7 +44,7 @@
 						</div>
 					</form>
 					<ul class="more">
-						<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+						<li><a href="<?php echo base_url()?>index.php/welcome/index"><i class="fa fa-home"></i> Home</a></li>
 					</ul>
 				</div>
 			</div>
