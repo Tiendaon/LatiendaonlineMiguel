@@ -7,12 +7,12 @@ class InsertarBD extends CI_Model{
         parent::_construct();
     }
     
-    public function registrar_usuario($nombre,$email,$contrasena)
+    public function registrar_usuario($nombre,$email,$password)
     {
         $data = array(
             'usuario' => $nombre,
             'email' => $email,
-            'password' =>$contrasena
+            'password' =>$password
         );
         
         return $this->db->insert('usuarios', $data);   
