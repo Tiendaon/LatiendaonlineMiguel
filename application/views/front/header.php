@@ -6,7 +6,7 @@
           
           <span><a  href="<?php echo base_url()?>index.php/Welcome/back_user_registro"> Registrarse</a></span>
           
-        <span><a href="#">Botón 2</a></span>
+        <span><a href="<?php echo base_url()?>index.php/Welcome/back_user_login">Ingresar</a></span>
       </section>
     </div><!--/.col-->
   </div><!--/.row-->

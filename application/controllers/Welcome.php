@@ -3,7 +3,7 @@ class Welcome extends CI_Controller {
   function __construct(){
       parent::__construct();
       
-        $this->load->model('claseconsultas');
+        $this->load->model('Claseconsultas');
    }
     
 	public function index()
@@ -26,6 +26,12 @@ class Welcome extends CI_Controller {
           
           $this->load->view('back/index');  
                      
-	}        
+	}
+         public function back_user_login()
+	{
+          
+          $this->load->view('back/back-user-login');  
+                     
+	} 
        
 }
