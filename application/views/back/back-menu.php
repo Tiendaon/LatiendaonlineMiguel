@@ -2,7 +2,7 @@
 	<!-- User profile -->
 	<div class="asideUserProfile">
 		<a href="user-profile.html" title="#" class="c">
-			<img src="<?php echo base_url()?>views/back/tmp/eduardojorque.jpg" alt="#" class="img-responsive">
+			<img src="<?php echo base_url()?>application/views/back/tmp/eduardojorque.jpg" alt="#" class="img-responsive">
 			<span class="name hidden-xs hidden-sm">Eduardo<br> Jorquera</span>
 		</a>
 	</div>
@@ -11,10 +11,10 @@
 	<nav class="simpleList asideNavigation">
 		<ul>
 			<li class="active"><a href="index.php"><i class="zmdi zmdi-apps zmdi-hc-fw icon"></i> <span class="hidden-xs hidden-sm">Escritorio</span></a></li>
-			<li><a href="<?php echo base_url()?>views/back/back-perfil.php"><i class="zmdi zmdi-account zmdi-hc-fw icon"></i> <span class="hidden-xs hidden-sm">Mi Perfil</span></a></li>
-			<li><a href="<?php echo base_url()?>views/back/back-tiendas.php"><i class="zmdi zmdi-store zmdi-hc-fw icon"></i> <span class="hidden-xs hidden-sm">Tiendas</span></a></li>
-			<li><a href="<?php echo base_url()?>views/back/back-productos-servicios.php"><i class="zmdi zmdi-shopping-cart-plus zmdi-hc-fw icon"></i> <span class="hidden-xs hidden-sm">Productos/Servicios</span></a></li>
-			<li><a href="<?php echo base_url()?>views/back/back-planes.php"><i class="zmdi zmdi-card-membership zmdi-hc-fw icon"></i> <span class="hidden-xs hidden-sm">Planes</span></a></li>
+			<li><a href="<?php echo base_url()?>application/views/back/back-perfil.php"><i class="zmdi zmdi-account zmdi-hc-fw icon"></i> <span class="hidden-xs hidden-sm">Mi Perfil</span></a></li>
+			<li><a href="<?php echo base_url()?>application/views/back/back-tiendas.php"><i class="zmdi zmdi-store zmdi-hc-fw icon"></i> <span class="hidden-xs hidden-sm">Tiendas</span></a></li>
+			<li><a href="<?php echo base_url()?>application/views/back/back-productos-servicios.php"><i class="zmdi zmdi-shopping-cart-plus zmdi-hc-fw icon"></i> <span class="hidden-xs hidden-sm">Productos/Servicios</span></a></li>
+			<li><a href="<?php echo base_url()?>application/views/back/back-planes.php"><i class="zmdi zmdi-card-membership zmdi-hc-fw icon"></i> <span class="hidden-xs hidden-sm">Planes</span></a></li>
 			<li class="sub js-submenu">
 				<div><i class="zmdi zmdi-pin-help zmdi-hc-fw icon"></i> <span class="hidden-xs hidden-sm">Ayuda <i class="zmdi zmdi-plus plus"></i></span></div>
 				<ul>
