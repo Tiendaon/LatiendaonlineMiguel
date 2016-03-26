@@ -1,6 +1,6 @@
 <?php
 
-class claseconsultas extends CI_Model{
+class Claseconsultas extends CI_Model{
     
     public function _construct()
     {
