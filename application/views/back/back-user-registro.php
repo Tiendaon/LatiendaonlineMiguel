@@ -23,11 +23,11 @@ return true; }
 					<h1>REGISTRATE ACÁ</h1>
                                         <form data-parsley-validate onsubmit="return formulario(this)" action="<?php echo base_url()?>index.php/Welcome/back_index" method="post">
 						<div class="form-group">
-							<input type="text" class="form-control simple-form-control" placeholder="Nombre" required data-parsley-error-message="Wrong e-mail format">
+                                                    <input name="nombre" type="text" class="form-control simple-form-control" placeholder="Nombre" required data-parsley-error-message="Wrong e-mail format">
 							<i class="fa fa-user"></i>
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control simple-form-control" placeholder="Email" required data-parsley-error-message="Wrong e-mail format">
+                                                    <input name="email" type="email" class="form-control simple-form-control" placeholder="Email" required data-parsley-error-message="Wrong e-mail format">
 							<i class="fa fa-envelope"></i>
 						</div>
 						<div class="form-group">

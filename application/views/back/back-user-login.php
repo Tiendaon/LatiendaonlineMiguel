@@ -13,13 +13,13 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
 					<h1>LA TIENDA ONLINE</h1>
-					<form data-parsley-validate>
+                                        <form data-parsley-validate action="<?php echo base_url()?>index.php/Welcome/validar_usuario" method="post">
 						<div class="form-group">
-							<input type="email" class="form-control simple-form-control" placeholder="Email" required data-parsley-error-message="Wrong e-mail format">
+                                                    <input name="email" type="email" class="form-control simple-form-control" placeholder="Email" required data-parsley-error-message="Wrong e-mail format">
 							<i class="fa fa-envelope"></i>
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control simple-form-control" placeholder="Password" required data-parsley-error-message="Wrong password">
+                                                    <input name="password" type="password" class="form-control simple-form-control" placeholder="Password" required data-parsley-error-message="Wrong password">
 							<i class="fa fa-lock"></i>
 						</div>
 						

@@ -42,7 +42,17 @@ class Welcome extends CI_Controller {
 
         $this->load->view('back/back-user-login');
     }
-    
+       public function validar_usuario() {
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
+        
+        if ($this->Claseconsultas->validar_usuario($email, $password)== TRUE) {
+            $this->load->view('back/index');
+        } else {
+            echo '<script language="javascript"> alert("Usuario o clave inválida");</script>';
+            $this->load->view('back/back-user-login');
+        }
+    }
     public function back_perfil() {
 
         $this->load->view('back/back-perfil');
