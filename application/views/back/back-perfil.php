@@ -50,7 +50,7 @@
 						<div class="col-xs-12 col-md-4 col-lg-3">
 							<div class="userProfileInfo">
 								<div class="image">
-									<img src="<?php echo base_url()?>views/back/tmp/eduardojorque.jpg" alt="#" class="img-responsive">
+									<img src="<?php echo base_url()?>application/views/back/tmp/eduardojorque.jpg" alt="#" class="img-responsive">
 									<a href="#" title="#" class="editImage">
 										<i class="fa fa-camera"></i>
 									</a>
@@ -99,31 +99,31 @@
 									<!-- About -->
 									<div role="tabpanel" class="tab-pane fade active in" id="tab-item-1">
 
-										<form action="">
+                                                                            <form action="<?php echo base_url()?>index.php/Welcome/completar_perfil" method="post">
 											<div class="row customSelectWrap" style="position:relative">
 												<div class="col-xs-12 col-sm-7">
 													<div class="form-group">
 														<label for="basicInput">Nombre</label>
-														<input type="text" class="form-control" id="basicInput" placeholder="Placeholder">
+                                                                                                                <input type="text"  name="nombre" class="form-control" id="basicInput" placeholder="Placeholder">
 														<small class="alertform">Debe introducir los dtos correctos</small>
 													</div>
 												</div>
 												<div class="col-xs-12 col-sm-5">
 													<div class="form-group">
 														<label for="basicInput">Apellido</label>
-														<input type="text" class="form-control" id="basicInput" placeholder="Placeholder">
+                                                                                                                <input type="text" name="apellido" class="form-control" id="basicInput" placeholder="Placeholder">
 													</div>
 												</div>
 												<div class="col-xs-12 col-sm-7">
 													<div class="form-group">
-														<label for="basicInput">Vacio</label>
-														<input type="text" class="form-control" id="basicInput" placeholder="Placeholder">
+														<label for="basicInput">Teléfono</label>
+                                                                                                                <input type="text" name="telefono" class="form-control" id="basicInput" placeholder="Placeholder">
 													</div>
 												</div>
 												<div class="col-xs-12 col-sm-7">
 													<div class="form-group">
-														<label for="basicInput">Vacio</label>
-														<input type="text" class="form-control" id="basicInput" placeholder="Placeholder">
+														<label for="basicInput">Direccion</label>
+                                                                                                                <input type="text"  name="direcccion" class="form-control" id="basicInput" placeholder="Placeholder">
 														<small class="alertform">Este campo es requerido</small>
 													</div>
 												</div>
@@ -132,8 +132,8 @@
 
 												<div class="col-xs-12 col-sm-7 i">
 													<div class="form-group">
-														<label>Vacio</label>
-														<select class="js-select">
+														<label>País</label>
+                                                                                                                <select  name="pais" class="js-select">
 															<option disabled selected>- Select country -</option>
 															<option>Slovakia</option>
 															<option>Czech Republic</option>
@@ -155,9 +155,9 @@
 
 												<div class="col-xs-12 col-sm-7 i">
 													<div class="form-group">
-														<label>Vacio</label>
-														<select class="js-select">
-															<option disabled selected>- Select country -</option>
+														<label>Ciudad</label>
+                                                                                                                <select  name="ciudad" class="js-select">
+															<option disabled selected>- Seleccione Región -</option>
 															<option>Slovakia</option>
 															<option>Czech Republic</option>
 															<option>Russia</option>

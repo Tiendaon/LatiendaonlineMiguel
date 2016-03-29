@@ -10,6 +10,7 @@ class Welcome extends CI_Controller {
 
         $this->load->model('Claseconsultas');
         $this->load->model('InsertarBD', "in");
+         $this->load->model('UpdateBD');
     }
 
     public function index() {
@@ -46,7 +47,19 @@ class Welcome extends CI_Controller {
 
         $this->load->view('back/back-perfil');
     }
-
+    public function completar_perfil() {
+        $nombre = $this->input->post('nombre');
+        $apellido = $this->input->post('apellido');
+        $telefono = $this->input->post('telefono');
+        $direccion = $this->input->post('direccion');
+        $pais = $this->input->post('pais');
+        $ciudad = $this->input->post('ciudad');
+        // capturar email e integrar en los parametros
+        $this->UpdateBD->completar_registro_usuario($nombre,$apellido,$telefono,$direccion,$pais,$ciudad);
+                // seguir completando
+        $this->load->view('back/back-perfil');
+        
+    }
     public function back_tiendas() {
 
         $this->load->view('back/back-tiendas');
