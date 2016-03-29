@@ -41,7 +41,24 @@ class Welcome extends CI_Controller {
 
         $this->load->view('back/back-user-login');
     }
+    
+    public function back_perfil() {
 
-   
+        $this->load->view('back/back-perfil');
+    }
 
+    public function back_tiendas() {
+
+        $this->load->view('back/back-tiendas');
+    }
+
+    public function back_productos_servicios() {
+
+        $this->load->view('back/back-productos-servicios');
+    }
+
+    public function back_planes() {
+
+        $this->load->view('back/back-planes');
+    }
 }
