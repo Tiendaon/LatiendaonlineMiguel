@@ -6,9 +6,10 @@ class UpdateBD extends CI_Model{
     {
         parent::_construct();
     }
-    // integrar email en los parametros
-    public function completar_registro_usuario($nombre,$apellido,$telefono,$direccion,$pais,$ciudad)
+    
+    public function completar_registro_usuario($email,$nombre,$apellido,$telefono,$direccion,$pais,$ciudad)
     {
-          // actalizar datos
+        $sql = "UPDATE usuarios SET nombre='$nombre',apellido='$apellido',telefono=$telefono,direccion='$direccion', pais='$pais', ciudad='$ciudad' WHERE email='$email'";
+        $this->db->query($sql);
     }
 }

@@ -68,8 +68,9 @@ class Welcome extends CI_Controller {
         $direccion = $this->input->post('direccion');
         $pais = $this->input->post('pais');
         $ciudad = $this->input->post('ciudad');
+        $email = $this->input->post('email');
         // capturar email e integrar en los parametros
-        $this->UpdateBD->completar_registro_usuario($nombre, $apellido, $telefono, $direccion, $pais, $ciudad);
+        $this->UpdateBD->completar_registro_usuario($email,$nombre, $apellido, $telefono, $direccion, $pais, $ciudad);
         // seguir completando
         $this->load->view('back/back-perfil');
     }
