@@ -8,17 +8,16 @@ class Welcome extends CI_Controller {
     function __construct() {
         parent::__construct();
 
-        $this->load->model('Claseconsultas');
+        $this->load->model('Claseconsultas',"cc");
         $this->load->model('InsertarBD', "in");
         $this->load->model('UpdateBD');
-        
     }
 
     public function index() {
-        $data['categoria'] = $this->Claseconsultas->obtener_categorias();
-        $data['regiones'] = $this->Claseconsultas->obtener_regiones();
-        $data['ciudades'] = $this->Claseconsultas->obtener_ciudades();
-        $data['top_categorias'] = $this->Claseconsultas->obtener_top_categorias();
+        $data['categoria'] = $this->cc->obtener_categorias();
+        $data['regiones'] = $this->cc->obtener_regiones();
+        $data['ciudades'] = $this->cc->obtener_ciudades();
+        $data['top_categorias'] = $this->cc->obtener_top_categorias();
         $this->load->view('front/index', $data);
     }
 
@@ -31,13 +30,15 @@ class Welcome extends CI_Controller {
         $nombre = $this->input->post('nombre');
         $password = $this->input->post('password');
         $email = $this->input->post('email');
-        
-        $data['datos_usuario']=array(
-            'email' => $email,
-            'nombre'=> $nombre
-        );
+
+
         if ($this->in->registrar_usuario($nombre, $email, $password)) {
-            $this->load->view('back/index',$data);
+            $data = array(
+                'email' => $email,
+                'nombre' => $nombre
+            );
+            $this->session->set_userdata($data);
+            $this->load->view('back/index');
         } else {
             $this->load->view('back/back-user-registro');
         }
@@ -51,12 +52,15 @@ class Welcome extends CI_Controller {
     public function validar_usuario() {
         $email = $this->input->post('email');
         $password = $this->input->post('password');
-        $data['datos_usuario']=array(
-            'email' => $email
-           
-        );
-        if ($this->Claseconsultas->validar_usuario($email, $password) == TRUE) {
-            $this->load->view('back/index',$data);
+        
+        if ($this->cc->validar_usuario($email, $password) == TRUE) {
+            $data = array(
+                'email' => $email,
+                'nombre' => "nombre_prueba"
+            );
+            $this->session->set_userdata($data);
+            $this->load->view('back/index');
+            
         } else {
             echo '<script language="javascript"> alert("Usuario o clave inválida");</script>';
             $this->load->view('back/back-user-login');
@@ -77,7 +81,7 @@ class Welcome extends CI_Controller {
         $ciudad = $this->input->post('ciudad');
         $email = $this->input->post('email');
         // capturar email e integrar en los parametros
-        $this->UpdateBD->completar_registro_usuario($email,$nombre, $apellido, $telefono, $direccion, $pais, $ciudad);
+        $this->UpdateBD->completar_registro_usuario($email, $nombre, $apellido, $telefono, $direccion, $pais, $ciudad);
         // seguir completando
         $this->load->view('back/back-perfil');
     }
@@ -100,13 +104,13 @@ class Welcome extends CI_Controller {
     function cargar_archivo() {
 
         $mi_imagen = $this->input->post('mi_imagen');
-        $config['upload_path'] = base_url()."Application/views/imagenes";
+        $config['upload_path'] = base_url() . "Application/views/imagenes";
         $config['file_name'] = "imagenprueba";
         $config['allowed_types'] = "gif|jpg|jpeg|png";
         $config['max_size'] = "0";
         $config['max_width'] = "0";
         $config['max_height'] = "0";
-        $config['overwrite']="TRUE";
+        $config['overwrite'] = "TRUE";
 
         $this->load->library('upload', $config);
 

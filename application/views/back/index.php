@@ -50,7 +50,7 @@
 						<!-- COLUMN RIGHT -->
 						<div class="col-xs-12 col-sm-7">
 							<div class="box">
-								<h2 class="boxHeadline">¡Muy bien <?php echo $datos_usuario['email'] ?>!</h2>
+								<h2 class="boxHeadline">¡Muy bien <?php echo $this->session->userdata('email');?>!</h2>
 								<h3 class="boxHeadlineSub">Bienvenido, Ya estás registrado en la tienda Online</h3>
 
 								<div class="alert alert-success alert-dismissible" role="alert">
