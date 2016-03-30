@@ -31,9 +31,13 @@ class Welcome extends CI_Controller {
         $nombre = $this->input->post('nombre');
         $password = $this->input->post('password');
         $email = $this->input->post('email');
-
+        
+        $data['datos_usuario']=array(
+            'email' => $email,
+            'nombre'=> $nombre
+        );
         if ($this->in->registrar_usuario($nombre, $email, $password)) {
-            $this->load->view('back/index');
+            $this->load->view('back/index',$data);
         } else {
             $this->load->view('back/back-user-registro');
         }
@@ -47,9 +51,12 @@ class Welcome extends CI_Controller {
     public function validar_usuario() {
         $email = $this->input->post('email');
         $password = $this->input->post('password');
-
+        $data['datos_usuario']=array(
+            'email' => $email
+           
+        );
         if ($this->Claseconsultas->validar_usuario($email, $password) == TRUE) {
-            $this->load->view('back/index');
+            $this->load->view('back/index',$data);
         } else {
             echo '<script language="javascript"> alert("Usuario o clave inválida");</script>';
             $this->load->view('back/back-user-login');
