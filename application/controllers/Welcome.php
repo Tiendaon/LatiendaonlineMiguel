@@ -10,7 +10,8 @@ class Welcome extends CI_Controller {
 
         $this->load->model('Claseconsultas');
         $this->load->model('InsertarBD', "in");
-         $this->load->model('UpdateBD');
+        $this->load->model('UpdateBD');
+        
     }
 
     public function index() {
@@ -42,21 +43,24 @@ class Welcome extends CI_Controller {
 
         $this->load->view('back/back-user-login');
     }
-       public function validar_usuario() {
+
+    public function validar_usuario() {
         $email = $this->input->post('email');
         $password = $this->input->post('password');
-        
-        if ($this->Claseconsultas->validar_usuario($email, $password)== TRUE) {
+
+        if ($this->Claseconsultas->validar_usuario($email, $password) == TRUE) {
             $this->load->view('back/index');
         } else {
             echo '<script language="javascript"> alert("Usuario o clave inválida");</script>';
             $this->load->view('back/back-user-login');
         }
     }
+
     public function back_perfil() {
 
         $this->load->view('back/back-perfil');
     }
+
     public function completar_perfil() {
         $nombre = $this->input->post('nombre');
         $apellido = $this->input->post('apellido');
@@ -65,11 +69,11 @@ class Welcome extends CI_Controller {
         $pais = $this->input->post('pais');
         $ciudad = $this->input->post('ciudad');
         // capturar email e integrar en los parametros
-        $this->UpdateBD->completar_registro_usuario($nombre,$apellido,$telefono,$direccion,$pais,$ciudad);
-                // seguir completando
+        $this->UpdateBD->completar_registro_usuario($nombre, $apellido, $telefono, $direccion, $pais, $ciudad);
+        // seguir completando
         $this->load->view('back/back-perfil');
-        
     }
+
     public function back_tiendas() {
 
         $this->load->view('back/back-tiendas');
@@ -84,4 +88,28 @@ class Welcome extends CI_Controller {
 
         $this->load->view('back/back-planes');
     }
+
+    function cargar_archivo() {
+
+        $mi_imagen = $this->input->post('mi_imagen');
+        $config['upload_path'] = base_url()."Application/views/imagenes";
+        $config['file_name'] = "imagenprueba";
+        $config['allowed_types'] = "gif|jpg|jpeg|png";
+        $config['max_size'] = "0";
+        $config['max_width'] = "0";
+        $config['max_height'] = "0";
+        $config['overwrite']="TRUE";
+
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload($mi_imagen)) {
+            //*** ocurrio un error
+            $data['uploadError'] = $this->upload->display_errors();
+            echo $this->upload->display_errors();
+            return;
+        }
+
+        $data['uploadSuccess'] = $this->upload->data();
+    }
+
 }
