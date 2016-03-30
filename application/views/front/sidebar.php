@@ -33,7 +33,7 @@
 
     <div class="form-group">
       <label>Región</label>
-      <select class="form-control" name="region">
+      <select class="form-control" name="pais">
            <option>SELECCIONE UNA REGIÓN</option>
             <?php 
     for ($i = 1; $i <= count($regiones); $i++)

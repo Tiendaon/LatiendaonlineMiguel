@@ -8,7 +8,7 @@ class Welcome extends CI_Controller {
     function __construct() {
         parent::__construct();
 
-        $this->load->model('Claseconsultas',"cc");
+        $this->load->model('Claseconsultas', "cc");
         $this->load->model('InsertarBD', "in");
         $this->load->model('UpdateBD');
     }
@@ -52,7 +52,7 @@ class Welcome extends CI_Controller {
     public function validar_usuario() {
         $email = $this->input->post('email');
         $password = $this->input->post('password');
-        
+
         if ($this->cc->validar_usuario($email, $password) == TRUE) {
             $data = array(
                 'email' => $email,
@@ -60,7 +60,6 @@ class Welcome extends CI_Controller {
             );
             $this->session->set_userdata($data);
             $this->load->view('back/index');
-            
         } else {
             echo '<script language="javascript"> alert("Usuario o clave inválida");</script>';
             $this->load->view('back/back-user-login');
@@ -68,8 +67,9 @@ class Welcome extends CI_Controller {
     }
 
     public function back_perfil() {
-
-        $this->load->view('back/back-perfil');
+        $data['regiones'] = $this->cc->obtener_regiones();
+        $data['ciudades'] = $this->cc->obtener_ciudades();
+        $this->load->view('back/back-perfil', $data);
     }
 
     public function completar_perfil() {
@@ -79,11 +79,26 @@ class Welcome extends CI_Controller {
         $direccion = $this->input->post('direccion');
         $pais = $this->input->post('pais');
         $ciudad = $this->input->post('ciudad');
-        $email = $this->input->post('email');
+        $email = $this->session->userdata('email');
         // capturar email e integrar en los parametros
-        $this->UpdateBD->completar_registro_usuario($email, $nombre, $apellido, $telefono, $direccion, $pais, $ciudad);
-        // seguir completando
-        $this->load->view('back/back-perfil');
+
+        if ($this->UpdateBD->completar_registro_usuario($email, $nombre, $apellido, $telefono, $direccion, $pais, $ciudad)) {
+            $data = array(
+                'email' => $email,
+                'nombre' => $nombre,
+                'apellidos' => $apellido,
+                'telefono' => $telefono,
+                'direccion' => $direccion,
+                'pais' => $pais,
+                'ciudad' => $ciudad
+            );
+            $this->session->set_userdata($data);
+            $data['regiones'] = $this->cc->obtener_regiones();
+            $data['ciudades'] = $this->cc->obtener_ciudades();
+            $this->load->view('back/back-perfil', $data);
+        } else {
+            $this->load->view('back/back-user-login');
+        }
     }
 
     public function back_tiendas() {
