@@ -133,9 +133,9 @@
 
                                                         <div class="col-xs-12 col-sm-7 i">
                                                             <div class="form-group">
-                                                                <label>PAIS</label>
+                                                                <label>REGION</label>
                                                                 <select  name="pais" class="js-select">
-                                                                    <option>SELECCIONE UNA PAÍS</option>
+                                                                    <option>SELECCIONE UNA REGIÓN</option>
                                                                     <?php
                                                                     for ($i = 1; $i <= count($regiones); $i++) {
                                                                         if (array_key_exists($i, $regiones)) {
