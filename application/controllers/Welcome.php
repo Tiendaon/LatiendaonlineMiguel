@@ -54,9 +54,16 @@ class Welcome extends CI_Controller {
         $password = $this->input->post('password');
 
         if ($this->cc->validar_usuario($email, $password) == TRUE) {
+           $datos = $this->cc->buscar_datos_usuarios($email);
+            
             $data = array(
                 'email' => $email,
-                'nombre' => "nombre_prueba"
+                'nombre' => $datos->nombre,
+                'apellidos' => $datos->apellido,
+                'telefono' => $datos->telefono,
+                'direccion' => $datos->direccion,
+                'pais' => $datos->pais,
+                'ciudad' => $datos->ciudad
             );
             $this->session->set_userdata($data);
             $this->load->view('back/index');
@@ -137,6 +144,12 @@ class Welcome extends CI_Controller {
         }
 
         $data['uploadSuccess'] = $this->upload->data();
+    }
+
+    public function cerrar_session() {
+        $this->session->sess_destroy();
+        $this->index();
+        redirect(base_url(), 'refresh');
     }
 
 }

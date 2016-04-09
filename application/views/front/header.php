@@ -24,6 +24,7 @@
 </div><!--/#logo-->
 
 
+
 <!-- TECHO TIENDA -->
 <div id="techo" class="container-fluid">
   <div class="row">
